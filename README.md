@@ -43,6 +43,15 @@ Visualize YouTube play count
 - Plotly로 인터랙티브한 바 차트 생성
 
 - HTML 파일로 그래프 자동 생성 및 웹 브라우저 열기
+
+### 📂 사용 방법
+1. 유튜브 시청 기록(JSON)을 Google Takeout에서 다운로드
+
+2. 실행 후 '파일 선택' 버튼으로 JSON 파일 선택
+
+3. 최소 재생 횟수와 최대 영상 갯수를 설정 후 '그래프 보기' 클릭
+
+4. 브라우저에서 결과 그래프 자동 출력
   
 ### ⚙️ 개발 환경 (Development Environment)
 - python 3.11.0
