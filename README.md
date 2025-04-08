@@ -41,7 +41,12 @@
 1. [Google Takeout](https://takeout.google.com/)에서 유튜브 시청 기록(JSON 파일)을 다운로드합니다.  
 2. 애플리케이션 실행 후 `파일 선택` 버튼으로 JSON 파일을 선택합니다.  
 3. `최소 재생 횟수`와 `최대 영상 객수`를 입력한 드지 `그래프 보기`를 클릭합니다.  
-4. 브라우저가 열리며 배열 결과가 시각화된 그래프가 Í \xcd9c력됩니다.
+4. 브라우저가 열리며 시각화된 그래프가 보여집니다.
+
+1. Download your YouTube watch history as a JSON file via Google Takeout.
+2. Run the application and click the 파일 선택 (Select File) button to load your JSON file.
+3. Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Videos), then click 그래프 보기 (View Graph).
+4. The resulting bar chart will automatically open in your web browser.
 
 ---
 
