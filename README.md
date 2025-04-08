@@ -43,6 +43,7 @@
 3. `최소 재생 횟수`와 `최대 영상 객수`를 입력한 드지 `그래프 보기`를 클릭합니다.  
 4. 브라우저가 열리며 시각화된 그래프가 보여집니다.
 
+
 1. Download your YouTube watch history as a JSON file via Google Takeout.
 2. Run the application and click the 파일 선택 (Select File) button to load your JSON file.
 3. Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Videos), then click 그래프 보기 (View Graph).
