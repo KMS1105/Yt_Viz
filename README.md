@@ -53,6 +53,9 @@ Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Video
 The resulting bar chart will automatically open in your web browser.
 
 ---
+## 실행 파일 (exe file)
+https://drive.google.com/file/d/1sizFaJwzBD6ctF2vkC-aA8zCDA_TS2E-/view?usp=drive_link
+---
 
 ## ⚙️ 개발 환경 (Development Environment)
 - Python 3.11.0  
