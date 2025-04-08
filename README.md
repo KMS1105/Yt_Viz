@@ -44,10 +44,10 @@
 4. 브라우저가 열리며 시각화된 그래프가 보여집니다.
 
 
-1. Download your YouTube watch history as a JSON file via Google Takeout.
-2. Run the application and click the 파일 선택 (Select File) button to load your JSON file.
-3. Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Videos), then click 그래프 보기 (View Graph).
-4. The resulting bar chart will automatically open in your web browser.
+Download your YouTube watch history as a JSON file via Google Takeout.
+Run the application and click the 파일 선택 (Select File) button to load your JSON file.
+Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Videos), then click 그래프 보기 (View Graph).
+The resulting bar chart will automatically open in your web browser.
 
 ---
 
