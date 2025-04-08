@@ -1,65 +1,64 @@
 # 🎥 Yt_Viz  
-**유튜브 재생 횟수 시각화**  
-**Visualize YouTube Play Count**
+**유튜브 기록 시각화 도구**  
+**Visualize Your YouTube History**
 
 ---
 
 ## 💻 프로젝트 소개 (Introduction to the Project)
 
-- 본 프로젝트는 사용자의 YouTube 시청 기록(JSON 형식)을 불러와, 특정 기준에 따라 필터링 및 정제하고, 가장 많이 보는 영상을 시각화하는 데스크톱 애플리케이션입니다.  
-- PyQt5 기반의 직관적인 GUI를 제공하며, Plotly를 활용해 시청 데이터를 동적으로 시각화합니다.
-
-- This project is a desktop application that loads a user's YouTube watch history (in JSON format), filters and cleans the data based on specific criteria, and visualizes the most frequently watched videos.  
-- It features an intuitive GUI built with PyQt5 and uses Plotly to generate dynamic bar charts for visual analysis of viewing data.
+- 이 프로젝트는 사용자의 유튜브 **시청기록** 및 **검색기록** (JSON 형식)을 불러와, 필터링/정제 후 **가장 많이 본 영상** 또는 **가장 많이 검색한 키워드**를 **시각화**하는 데스크톱 애플리케이션입니다.
+- PyQt5 기반 GUI로 쉽고 직관적인 조작이 가능하며, Plotly를 활용해 **인터랙티브한 그래프**를 생성합니다.
 
 ---
 
 ## 💡 주요 기능 (Key Features)
 
-### ✅ GUI 기반 사용자 입력 (User Input via GUI)
-- 최소 재생 횟수 설정 (Set minimum view count)  
-- 최대 영상 객수 제한 (Limit number of top videos)  
-- JSON 파일 탐색 및 선택 (Browse and select JSON file)
+### ✅ GUI 기반 분석 선택 (GUI-Based Interaction)
+- 두 개의 탭 제공: `시청기록`, `검색기록`  
+- 각 탭에서 개별적으로 JSON 파일 선택 및 분석 실행 가능
 
-### ✅ 데이터 전처리 및 필터링 (Data Cleaning and Filtering)
-- 광고 관련 항목 자동 제거 (Automatic removal of ads)  
-- 제목 및 세부정보 정제 (Refinement of titles and metadata)  
-- 삭제/비공개 영상 제거 (Filter out deleted/private videos)
+### ✅ 사용자 설정 적용 (Customizable Settings)
+- **최소 반복 횟수** 설정 (예: 3회 이상 시청/검색한 항목만 보기)  
+- **최대 표시 항목 수** 제한 (예: 상위 20개만 시각화)
 
-### ✅ 시청 횟수 배정 (Viewing Count Analysis)
-- 영상별 시청 횟수 집계 (Count views per video)  
-- 사용자 기준에 따른 필터링 적용 (Filter by view threshold)  
-- 상위 영상 수 제한 (Limit number of displayed results)
+### ✅ 데이터 정제 및 필터링 (Data Cleaning)
+- 광고 관련 기록 자동 제거  
+- 삭제된 영상 / 비공개 영상 / 스팸 검색어 등 제거  
+- 제목 및 키워드 자동 정제
 
-### ✅ 시각화 결과 제공 (Visualization Output)
-- Plotly 기반 인터랙티브 바 체트 생성 (Interactive bar chart with Plotly)  
-- HTML 파일 자동 생성 및 웹 브라우저 실행 (Auto-generated HTML opened in browser)
+### ✅ 시각화 결과 제공 (Interactive Visualization)
+- Plotly 기반 바 차트 생성  
+- HTML 파일로 자동 저장 및 브라우저 자동 실행
 
 ---
 
 ## 📂 사용 방법 (How to Use)
-1. [Google Takeout](https://takeout.google.com/)에서 유튜브 시청 기록(JSON 파일)을 다운로드합니다.  
-2. 애플리케이션 실행 후 `파일 선택` 버튼으로 JSON 파일을 선택합니다.  
-3. `최소 재생 횟수`와 `최대 영상 객수`를 입력한 뒤 `그래프 보기`를 클릭합니다.  
-4. 브라우저가 열리며 시각화된 그래프가 보여집니다.
 
-
-Download your YouTube watch history as a JSON file via Google Takeout.
-
-Run the application and click the 파일 선택 (Select File) button to load your JSON file.
-
-Set the 최소 재생 횟수 (Minimum Views) and 최대 영상 객수 (Max Videos), then click 그래프 보기 (View Graph).
-
-The resulting bar chart will automatically open in your web browser.
+1. [Google Takeout](https://takeout.google.com/)에서 YouTube 데이터를 다운로드하세요.  
+   - "YouTube 및 YouTube Music" → "시청기록" 및 "검색기록" 포함  
+2. 애플리케이션 실행 후 `시청기록` 또는 `검색기록` 탭에서 JSON 파일을 선택합니다.  
+3. `최소 횟수`와 `최대 표시 갯수`를 입력한 뒤 `분석 실행` 버튼을 클릭하세요.  
+4. 브라우저에서 분석 결과가 시각화되어 자동으로 열립니다.
 
 ---
-## 🔗 실행 파일 (.exe) 
-https://drive.google.com/file/d/1Sj7kfXiU6wdWlR8wjrGigCxzdsUJ3ZFZ/view?usp=sharing
+
+## 🔗 실행 파일 (.exe)
+
+[👉 다운로드 (Google Drive)](https://drive.google.com/file/d/1Sj7kfXiU6wdWlR8wjrGigCxzdsUJ3ZFZ/view?usp=sharing)
+
 ---
 
 ## ⚙️ 개발 환경 (Development Environment)
+
 - Python 3.11.0  
 - PyQt5  
 - Pandas  
 - Plotly
 
+---
+
+## 📌 참고 사항 (Notes)
+
+- `.json` 파일은 Google Takeout에서 제공하는 원본 그대로 사용 가능합니다.  
+- 광고성 기록, 삭제된 영상, 이상한 문자열이 포함된 제목 등은 자동으로 제거됩니다.  
+- 결과 그래프는 `output_plot.html`로 저장되며, 실행 시 자동으로 브라우저가 열립니다.
